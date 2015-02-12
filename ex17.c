@@ -125,7 +125,7 @@ void Database_set(struct Connection *conn,
 	die("Name copy failed");
     }
 
-    *res = strncpy(addr->email, email, MAX_DATA);
+    res = strncpy(addr->email, email, MAX_DATA);
     if (!res) {
 	die("Email copy failed");
     }
